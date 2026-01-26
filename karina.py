@@ -11,7 +11,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 
-TOKEN = "8494851583:AAEToTqoFhlVQL9rNRGfwUqGWU30UcSDHg4"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 BOT_USERNAME = "karkarychmeetbot"
 
 logging.basicConfig(level=logging.INFO)
